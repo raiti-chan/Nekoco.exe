@@ -114,9 +114,6 @@
     <Resource Include="Resources\Nekoco_000.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Nekoco_000.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.7.2 %28x86 および x64%29</ProductName>
