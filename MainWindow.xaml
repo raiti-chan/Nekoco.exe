@@ -7,7 +7,7 @@
 		Topmost="True"
         Title="MainWindow" Height="500" Width="397" AllowsTransparency="True" WindowStyle="None" Visibility="Visible" Background="Transparent">
     <Grid>
-		<Image Source="Resources/Nekoco_000.png"/>
+		<Image x:Name="Image" Source="Resources/Nekoco_000.png"/>
 
 	</Grid>
 </Window>

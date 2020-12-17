@@ -7,13 +7,13 @@ using System.Windows;
 // アセンブリに関する一般情報は以下の属性セットをとおして制御されます。
 // アセンブリに関連付けられている情報を変更するには、
 // これらの属性値を変更してください。
-[assembly: AssemblyTitle("Nekoco")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Nekoco.exe")]
+[assembly: AssemblyDescription("Nekoco.exe")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Nekoco")]
+[assembly: AssemblyCompany("Raitichan")]
+[assembly: AssemblyProduct("Nekoco.exe")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("Nekoco.exe")]
 [assembly: AssemblyCulture("")]
 
 // ComVisible を false に設定すると、このアセンブリ内の型は COM コンポーネントから
@@ -53,3 +53,5 @@ using System.Windows;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: Guid("F2E0747B-54B1-4BCA-9D9C-04C9C3843614")]
+[assembly: NeutralResourcesLanguage("ja-JP")]

@@ -59,15 +59,5 @@ namespace Nekoco.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap Nekoco_000 {
-            get {
-                object obj = ResourceManager.GetObject("Nekoco_000", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
