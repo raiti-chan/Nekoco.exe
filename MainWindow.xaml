@@ -5,9 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
 		Topmost="True"
+		ShowInTaskbar="False"
         Title="MainWindow" Height="500" Width="397" AllowsTransparency="True" WindowStyle="None" Visibility="Visible" Background="Transparent">
     <Grid>
-		<Image x:Name="Image" Source="Resources/Nekoco_000.png"/>
+		<Image x:Name="Image" Source="Resources/Nekoco_000.png">
+			<Image.ContextMenu>
+				<ContextMenu>
+					<MenuItem Header="Exit" Click="ExitClick"/>
+				</ContextMenu>
+			</Image.ContextMenu>
+		</Image>
 
 	</Grid>
 </Window>
