@@ -105,7 +105,7 @@ namespace Nekoco {
 
 			if (this.random.Next(10) == 5) {
 				// 移動
-				if (this.random.Next(3) == 1) {
+				if (this.random.Next(10) == 4) {
 					this.MoveToPointer();
 				} else {
 					this.RandomMove();
@@ -122,9 +122,11 @@ namespace Nekoco {
 				Util.SetCursorPos(this.Left + this.Width / 2, this.Top + this.Height / 2);
 			}
 
-			if (this.random.Next(50) == 25) {
-				// 増殖
-				Process.Start("Nekoco.exe");
+			if (this.random.Next(100) == 25) {
+				if (Process.GetProcessesByName("Nekoco").Length < 50) {
+					// 増殖
+					Process.Start("Nekoco.exe");
+				}
 			}
 		}
 
@@ -147,6 +149,19 @@ namespace Nekoco {
 		/// <param name="sender">sender</param>
 		/// <param name="e">e</param>
 		private void ExitClick(object sender, RoutedEventArgs e) {
+			Application.Current.Shutdown();
+		}
+
+		/// <summary>
+		/// AllExit
+		/// </summary>
+		/// <param name="sender">sender</param>
+		/// <param name="e">e</param>
+		private void AllExitClick(object sender, RoutedEventArgs e) {
+			foreach(Process process in Process.GetProcessesByName("Nekoco")) {
+				if (Process.GetCurrentProcess().Id == process.Id) continue;
+				process.Kill();
+			}
 			Application.Current.Shutdown();
 		}
 

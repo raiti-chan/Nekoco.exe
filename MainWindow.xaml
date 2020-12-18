@@ -11,7 +11,8 @@
 		<Image x:Name="Image" Source="Resources/Nekoco_000.png">
 			<Image.ContextMenu>
 				<ContextMenu>
-					<MenuItem Header="Exit" Click="ExitClick"/>
+					<MenuItem Header="Kill" Click="ExitClick"/>
+					<MenuItem Header="All Kill" Click="AllExitClick"/>
 				</ContextMenu>
 			</Image.ContextMenu>
 		</Image>
